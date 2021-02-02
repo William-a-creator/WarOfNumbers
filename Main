@@ -1,0 +1,27 @@
+public class Main {
+    public static void main(String[] args) {
+        //test code
+    }
+
+    public static int warOfNumbers(int[]numbers){
+        int sumOfEven = 0;
+        int sumOfOdd = 0;
+
+        for (int i = 0; i < numbers.length; i++){
+            if(numbers[i] % 2 == 0){
+                sumOfEven+= numbers[i];
+            } else {
+                sumOfOdd+= numbers[i];
+            }
+        }
+        if ( sumOfEven > sumOfOdd){
+            return sumOfEven - sumOfOdd;
+        }
+        if ( sumOfEven < sumOfOdd){
+            return sumOfOdd - sumOfEven;
+        }
+        return 0;
+
+
+    }
+}
